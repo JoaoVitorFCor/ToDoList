@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: Helvetica;
-  color: #333;
+  color: #2d1757;
   box-sizing: border-box;
 }
 
@@ -16,8 +16,8 @@ body {
 
 button {
   background-color: #fdfdfd;
-  color: #102f5e;
-  border: 2px solid #102f5e;
+  border: 2px solid #2d1757;
+  border-radius: 4px;
   padding: .3rem .6rem;
   font-size: 1rem;
   cursor: pointer;
@@ -27,8 +27,8 @@ button {
 }
 
 button:hover {
-  background-color: #102f5e;
-  color: #fdfdfd;
+  background-color: #b28bf7;
+  border-color: #d2c8e6;
 }
 
 button:hover > i {
@@ -36,7 +36,7 @@ button:hover > i {
 }
 
 button i {
-  color: #102f5e;
+  color: #2d1757;
   font-weight: bold;
   pointer-events: none;
 }
@@ -55,7 +55,7 @@ select {
 .todo-container {
   max-width: 450px;
   margin: 3rem auto;
-  background-color: #fdfdfd;
+  background-color: #d2c8e6;
   padding: 1.5rem;
   border-radius: 5px;
 }
@@ -63,14 +63,14 @@ select {
 .todo-container header {
   text-align: center;
   padding: 0 1rem 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #2d1757;
 }
 
 /* ToDo Form */
 
 #todo-form, #edit-form {
   padding: 1rem;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #2d1757;
  }
 
 #todo-form p , #edit-form p {
@@ -94,7 +94,7 @@ select {
 
 #toolbar {
   padding: 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #2d1757;
   display: flex;
 }
 
@@ -103,7 +103,7 @@ select {
 }
 
 #search {
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #2d1757;
   padding-right: 1rem;
   margin-right: 1rem;
   width: 65%;
@@ -137,7 +137,7 @@ select {
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #2d1757;
   transition: .3s;
 }
 
@@ -151,11 +151,23 @@ select {
  }
 
 .done {
-  background-color: #395169;
+  background-color: #bc9df2;
 }
 
 .done h3 {
-  color: #FFF;
+  color: #d2c8e6;
   text-decoration: line-through;
   font-style: italic;
+}
+
+.done button i {
+  color: #b28bf7;
+}
+
+.done button:hover {
+  border-color: #2d1757;
+}
+
+.done button:hover > i {
+  color: #2d1757;
 }
